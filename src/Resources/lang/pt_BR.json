@@ -1,0 +1,21 @@
+{
+    "Brazilian Customer Attributes": "Campos Brasileiros",
+    "Enabled Person Types": "Tipo de Pessoas Habilitadas",
+    "Person": "Física",
+    "Person Type": "Tipo de Pessoa",
+    "Company": "Jurídica",
+    "Company Name": "Razão Social",
+    "Fantasy Name": "Nome Fantasia",
+    "Select the types of person enabled in the store": "Selecione os tipos de pessoa habilitadas na loja",
+    "Person configurations": "Configurações de Pessoa Física",
+    "Enable General Register?": "Habilitar RG?",
+    "Company configurations": "Configurações de Pessoa Jurídica",
+    "Enable State Register?": "Habilitar Inscrição Estadual?",
+    "Enable Fantasy Name?": "Habilitar Nome Fantasia?",
+    "General Register": "RG",
+    "State Register": "Inscrição Estadual",
+    "Document Person": "CPF",
+    "Document Company": "CNPJ",
+    "Exempt": "Isento",
+    "You registration need to be completed, please update you register before buy.": "Seu cadastro precisa ser completado, por favor atualize seu cadastro antes de comprar."
+}

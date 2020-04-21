@@ -1,0 +1,25 @@
+{
+    "name": "cagartner/bagisto-brazilcustomer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Gartner",
+            "email": "contato@carlosgartner.com.br"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Cagartner\\BrazilCustomer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cagartner\\BrazilCustomer\\Providers\\BrazilCustomerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
