@@ -43,7 +43,7 @@ $personType = old('person_type') ? old('person_type') : $default;
 
                 <input
                     type="text"
-                    class="form-style"
+                    class="form-style control"
                     name="document"
                     v-validate="'required'"
                     value="{{ old('document') }}"
@@ -63,7 +63,7 @@ $personType = old('person_type') ? old('person_type') : $default;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="state_register"
                         v-validate="'required'"
                         value="{{ old('state_register') }}"
@@ -83,7 +83,7 @@ $personType = old('person_type') ? old('person_type') : $default;
 
                 <input
                     type="text"
-                    class="form-style"
+                    class="form-style control"
                     name="company_name"
                     v-validate="'required'"
                     value="{{ old('company_name') }}"
@@ -102,7 +102,7 @@ $personType = old('person_type') ? old('person_type') : $default;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="fantasy_name"
                         v-validate="'required'"
                         value="{{ old('fantasy_name') }}"
@@ -122,7 +122,7 @@ $personType = old('person_type') ? old('person_type') : $default;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="general_register"
                         v-validate="'required'"
                         value="{{ old('general_register') }}"

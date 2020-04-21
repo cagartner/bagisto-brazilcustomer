@@ -23,6 +23,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Shop
         Event::listen('bagisto.shop.customers.signup_form_controls.before', function($viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('brcustomer::signup.person-type');
         });
@@ -34,6 +35,16 @@ class EventServiceProvider extends ServiceProvider
         Event::listen('bagisto.shop.customers.account.profile.view.table.before', function($viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('brcustomer::profile.index');
         });
+
+        // Admin
+        Event::listen('bagisto.admin.customers.create.before', function($viewRenderEventManager) {
+            $viewRenderEventManager->addTemplate('brcustomer::signup.person-type');
+        });
+
+        Event::listen('bagisto.admin.customer.edit.form.before', function($viewRenderEventManager) {
+            $viewRenderEventManager->addTemplate('brcustomer::profile.person-type');
+        });
+
 
         // Update user info with news attributes
         Event::listen('customer.registration.after', CustomerAddCustomAttributesListener::class);

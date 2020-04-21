@@ -43,7 +43,7 @@ $personType = $customer->person_type;
 
                 <input
                     type="text"
-                    class="form-style"
+                    class="form-style control"
                     name="document"
                     v-validate="'required'"
                     value="{{ $customer->document }}"
@@ -66,7 +66,7 @@ $personType = $customer->person_type;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="state_register"
                         v-validate="'required'"
                         value="{{ $customer->state_register }}"
@@ -86,7 +86,7 @@ $personType = $customer->person_type;
 
                 <input
                     type="text"
-                    class="form-style"
+                    class="form-style control"
                     name="company_name"
                     v-validate="'required'"
                     value="{{ $customer->company_name }}"
@@ -105,7 +105,7 @@ $personType = $customer->person_type;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="fantasy_name"
                         v-validate="'required'"
                         value="{{ $customer->fantasy_name }}"
@@ -125,7 +125,7 @@ $personType = $customer->person_type;
 
                     <input
                         type="text"
-                        class="form-style"
+                        class="form-style control"
                         name="general_register"
                         v-validate="'required'"
                         value="{{ $customer->general_register }}"
