@@ -24,7 +24,7 @@ class VerifyUserDataListener
     {
         $customer = auth()->guard('customer')->user();
 
-        if (!$customer->person_type || !$customer->document) {
+        if ($customer != null and (!$customer->person_type || !$customer->document)) {
             Session()->flash('error', trans('You registration need to be completed, please update you register before buy.'));
         }
     }
