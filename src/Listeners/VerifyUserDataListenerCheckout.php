@@ -24,11 +24,9 @@ class VerifyUserDataListenerCheckout
     {
         $customer = auth()->guard('customer')->user();
 
-        if (!$customer->person_type || !$customer->document) {
+        if ($customer == null || !$customer->person_type || !$customer->document) {
             Session()->flash('error', trans('You registration need to be completed, please update you register before buy.'));
-
-            echo '<script>window.location.href = "'. route('customer.profile.edit') .'"</script>';
-            exit;
+            return redirect()->route('customer.profile.edit');
         }
     }
 }
