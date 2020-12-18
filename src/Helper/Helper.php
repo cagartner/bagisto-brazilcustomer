@@ -61,4 +61,16 @@ class Helper
     {
         return core()->getConfigData(self::CONFIG_SHOW_FANTASY_NAME);
     }
+    
+    /**
+     * Clean all special characters from BrCustomer document field
+     *
+     * @param  string $value
+     * @return string
+     */
+    public static function clearDocumentString(string $value): string
+    {
+        $value = preg_replace('/[^0-9]/', '', $value);
+        return $value;
+    }
 }
