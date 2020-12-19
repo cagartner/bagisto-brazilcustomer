@@ -8,6 +8,8 @@ $personType = $customer->person_type;
 ?>
 <person-type></person-type>
 
+@extends('brcustomer::scripts')
+
 @push('scripts')
     <script type="text/x-template" id="input-document">
         <div class="person-type">
@@ -43,12 +45,12 @@ $personType = $customer->person_type;
 
                 <input
                     type="text"
+                    v-mask="documentMask"
                     class="form-style control"
                     name="document"
                     v-validate="'required'"
                     value="{{ $customer->document }}"
-                    :data-vv-as="documentLabel"
-                    :maxlength="documentMaxlength" />
+                    :data-vv-as="documentLabel" />
 
                 <span class="control-error" v-if="errors.has('document')">
                     @{{ errors.first('document') }}

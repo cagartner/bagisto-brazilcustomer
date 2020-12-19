@@ -35,7 +35,8 @@ class CustomerAddCustomAttributesListener
         }
 
         if ($this->request->has('document')) {
-            $customer->document = $this->request->get('document');
+            $document = \Cagartner\BrazilCustomer\Helper\Helper::cleanDocumentString($this->request->get('document'));
+            $customer->document = $document;
             $save = true;
         }
 
